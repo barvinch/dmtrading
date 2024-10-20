@@ -1,0 +1,19 @@
+---
+title: "trading-with-dmtrading"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{trading-with-dmtrading}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dmtrading)
+```
