@@ -1,0 +1,5 @@
+devtools::install("C:/local_docs/dmtrading")
+library(dmtrading)
+usethis::use_readme_rmd()
+usethis::use_vignette("trading-with-dmtrading")
+usethis::use_testthat()

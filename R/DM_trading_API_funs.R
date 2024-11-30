@@ -2072,7 +2072,9 @@ dm_get_targets_by_title <- function(game_id, title) {
       )) %>%
         mutate(title = as.character(title),
                amount = as.integer(amount),
-               price = as.numeric(price)/100)
+               price = as.numeric(price)/100) %>%
+        tidyr::unnest_wider(attributes) # Unnest the attributes column into separate columns
+
       # %>%
       #   unnest(attributes) %>%
       #   select(title, amount, price, everything())
